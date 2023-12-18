@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RLD Finance</title>
+    <link rel="icon" type="image/x-icon" href="Images/L.jpg">
+</head>
+<script>
+    const observer = new IntersectionObserver ((entries) => { entries.forEach((entry) => {
+console.log(entry)
+    if (entry.isIntersecting) {
+    ntry.target.classList.add("show");
+    } else {
+    entry.target.classList.remove("show");
+            }
+        });
+    });
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+    
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=REM:wght@300;600&display=swap');
+
+    @keyframes fade-up{
+        0%{
+            opacity: 0;
+            filter: blur(10px);
+            transform: translateZ(30px) scale(0.9);
+        }
+        100%{
+            filter: blur(0px);
+            opacity: 1;
+            transform: translateZ(0px) scale(1);
+        }
+    }
+
+    body{
+        margin: 0px;
+    }
+    .top{
+        height: 429.5px;
+        width: 1519.2px;
+        background-color: #5D2BC7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hd{
+        margin-top: 55px;
+        font-family: 'REM', sans-serif;
+        font-weight: 600;
+        font-size: 50px; 
+        color: white;
+        display: flex;
+    }
+    .slogan{
+        margin-top: 40px;
+        font-family: 'REM', sans-serif;
+        font-size: 30px; 
+        color: white;
+        text-align: center;
+    }
+    .btn{
+        margin-top: 40px;
+        
+    }
+    .buton{
+        width: 178.4px;
+        height: 52px;
+        padding: 14px 40px;
+        border-radius: 24px;
+        border: 0px;
+        outline: none;
+        background-color: #111827;
+        color: #FFFFFF;
+        font-size: 18px;
+        transition: 0.2s;
+    }
+    .buton:hover{
+        background-color: rgb(38,38,64);
+    }
+    
+    .op{
+        margin-left: 15px;
+        color: #E9CAFF;
+        transition: 0.4s;
+    }
+    .op:hover{
+        cursor: default;
+    }
+    .text{
+        font-family: 'REM', sans-serif;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 16px;
+        color: #E9CAFF;
+    }
+    .imgs{
+        height: 160px;
+        width: 1519.2px;
+        background-color: #5D2BC7;
+    }
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #232736;
+        height: 50rem;
+        padding: 32px;
+    }
+    .main{
+        height: 880px;
+        width: 1120px;
+        border-radius: 1.5rem;
+        margin-top: -200px;
+        border: 4px solid black;
+        position: relative;
+        animation: fade-up 0.8s ;        
+    }
+    .white{
+        
+        display: flex;
+        justify-content: center;
+        margin: 12px;
+    }
+    .left{
+       height: 643px;
+       margin-top: 32px;
+       margin-bottom: 32px;
+       margin-right: 16px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+    .right{
+       height: 643px;
+       margin-top: 32px;
+       margin-bottom: 32px;
+       margin-left: 16px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       padding: 28px;
+    }
+    .up{
+        font-family: 'REM', sans-serif;
+        font-weight: 600;
+        font-size: 72px;
+    }
+    .down{
+        text-align: center;
+        font-size: 20px;
+        font-family: 'REM', sans-serif;
+        color: #9597A0;
+    }
+    .right1{
+        padding: 8px;
+        border-radius: 18px;
+        height: 200px;
+        width: 384px;
+        background-color: #232736;
+        margin-bottom: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    
+    .right2{
+        padding: 8px;
+        border-radius: 18px;
+        margin-top: 12px;
+        height: 200px;
+        width: 384px;
+        background-color: #232736;
+    }
+    
+    .up1{
+        margin-top: 30px;
+        margin-left: 30px;
+        font-family: 'REM', sans-serif;
+        font-size: 24px;
+        color: #FFFFFF;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        
+    }
+    .up2{
+        align-items: center;
+        font-family: 'REM', sans-serif;
+        margin-top: 30px;
+        margin-right: 30px;
+    }
+    .USDC{
+        border-radius: 24px;
+        margin-right: 12px;
+    }
+    
+    
+    .buttons{
+       
+        height: 44.2px;
+        border-radius: 0.5rem;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'REM', sans-serif;
+        font-size: 14px;
+        background-color: #10141f;
+        outline: none;
+        border: 0px;
+        color: #E9CAFF;
+    }
+    .pim{
+        display: flex;
+        justify-content: space-between;
+        width: 384px;        
+    }
+    .rest{
+        width: 384px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 48px;
+        font-family: 'REM', sans-serif;
+        font-weight: 600;
+        position: absolute;
+        margin-top: 100px;
+        color: #FFFFFF;
+        
+    }
+    .rest2{
+        width: 384px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 48px;
+        font-family: 'REM', sans-serif;
+        font-weight: 600;
+        position: absolute;
+        margin-top: 25px;
+        color: #FFFFFF;
+    }
+    .four{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 848px;
+        background-color: #8f18f7;
+        margin-top: -50px;
+        padding: 16px 8px;
+    }
+    .heading{
+        font-family: 'REM', sans-serif;
+        font-weight: 600;
+        font-size: 72px; 
+        color: #FFFFFF;
+        display: flex;
+    }
+    .top2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .block{
+        height: 328px;
+        width: 400px;
+        margin-right: 22px;
+        margin-left: 22px;
+        background-color: #101625;
+        border-radius: 1rem;
+        margin-top: 22px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .head{
+        font-family: 'REM', sans-serif;
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+    .lgs{
+        margin-top: 25px;
+        border-radius: 50%;
+        background-color: #5D2BC7;
+    }
+    .b2{
+        display: flex;
+    }
+    .remain{
+        height: 707.2px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lgos{
+        display: flex;
+        justify-content: space-around;
+        width: 727px;
+        margin-top: 90px;
+        animation: fade-up 1s;
+    }
+    .hidden{
+        opacity: 0;
+        transition: all 1s;
+    }
+    .show{
+        opacity: 1;
+    }
+   
+</style>
+<body>
+    <div class="top">
+        <div class="hd">Real Yeild<div class="op">Optimized</div></div>
+        <div class="slogan">Grow Your Crypto Investments Like a Pro,<br> Hassle-Free.</div>
+        <div class="btn"><button class="buton">Get Started</button></div>
+        <div class="text">
+            4Stax (💯,💰) is your ultimate partner for boosting yields on Arbitrum. <br>
+            Our platform helps you grow your bags with top Real Yield tokens, fantastic vaults, <br>
+            and popular assets like $ETH, $USDC, $BFR, $GMX, and $GLP.
+        </div>
+    </div>
+    <div class="imgs">
+    </div>
+    <div class="img">
+       <img src="Images/Main.jpeg" alt="" class="main">
+    </div>
+    <div class="white">
+        <div class="left">
+            <div class="up">High Yield Low Fees</div>
+            <div class="down">Investing in crypto made simple, affordable and rewarding for all. High yield and <br> low fees, always on autopilot.</div>
+        </div>
+        <div class="right" class="hidden">
+            <div class="right1">
+                <div class="pim">
+                <div class="up1"><img src="Images/USDC.png" alt="USDC" width="48px" class="USDC">USDC</div>
+                <div class="up2">
+                    <button class="buttons"><img src="Images/USDC.png" alt="USDC" width="25px" class="USDC">HOP</button>
+                </div>
+            </div>
+            <div class="rest">9.20% APY</div>
+            </div>
+            <div class="right2">
+                <div class="pim">
+                    <div class="up1"><img src="Images/GNS.jpg" alt="USDC" width="48px" class="USDC">GNS</div>
+                    <div class="up2">
+                        <button class="buttons"><img src="Images/GNS.jpg" alt="USDC" width="25px" class="USDC">Gains Network</button>
+                    </div>
+                </div>
+                <div class="rest2">3.77% APY</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="four">
+        <div class="heading">Key Features</div>
+        <div class="top2">
+            <div class="block">
+                <div class="head">Real Yield </div>
+                <div class="line"><hr width="340px"></div>
+                <div class="ds"><img src="Images/DS.jpg" alt="" height="96px" class="lgs"></div>
+                <div class="text">Rely on RLD's expert team to handpick the best Real Yield tokens for your investments, offering you the most promising DeFi opportunities.</div>
+            </div>
+            <div class="block">
+                <div class="head">Auto-compounding </div>
+                <div class="line"><hr width="340px"></div>
+                <div class="ds"><img src="Images/TradeUp.jpg" alt="" height="96px" class="lgs"></div>
+                <div class="text">Harness compound interest, our smart contracts reinvest your earnings and maximize returns without any extra effort.</div>
+            </div>
+        </div>
+        <div class="b2">
+            <div class="block">
+                <div class="head">Single Stake </div>
+                <div class="line"><hr width="340px"></div>
+                <div class="ds"><img src="Images/Single stake.png" alt="" height="96px" class="lgs"></div>
+                <div class="text">Deposit one asset, and we'll handle the rest, ensuring top-notch returns without juggling multiple tokens.</div>
+            </div>
+            <div class="block">
+                <div class="head">Truthless </div>
+                <div class="line"><hr width="340px"></div>
+                <div class="ds"><img src="Images/Truthless.png" alt="" height="96px" class="lgs"></div>
+                <div class="text">Our permissionless, trustless approach safeguards your assets using cutting-edge technology and protocols.</div>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+    </div>
+    <div class="remain">
+        <div class="up">Join The Community</div>
+        <div class="lgos">
+            <div class="fl"><img src="Images/TGlo.png" alt="" height="182px"></div>
+            <div class="fl"><img src="Images/Dislgo.png" alt="" height="182px"></div>
+            <div class="fl"><img src="Images/TWlgo.png" alt="" height="182px"></div>
+        </div>
+    </div>
+</body>
+</html>
